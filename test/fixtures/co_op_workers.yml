@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_op_id: MyString
+  worker_id: MyString
+
+two:
+  co_op_id: MyString
+  worker_id: MyString

@@ -1,0 +1,2 @@
+module CoOpHelper
+end
