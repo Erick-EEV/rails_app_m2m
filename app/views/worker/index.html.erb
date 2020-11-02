@@ -1,6 +1,6 @@
 <h1>Workers</h1>
 <ul>
 <% @workers.each do |worker|%>
-    <li><%= link_to worker.name, worker_path(worker.id) %></li>
+    <li><%=link_to 'X', worker, method: 'delete' %> <%= link_to worker.name, worker_path(worker.id) %></li>
 <%end%>
 </ul>

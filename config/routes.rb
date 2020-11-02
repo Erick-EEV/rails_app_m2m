@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # get 'worker/show'
   # get 'worker/create'
   # get 'worker/edit'
-resources :worker, only: [:index, :show, :create, :edit]
+resources :worker, only: [:index, :show, :update , :new, :destroy, :create, :edit]
   # get 'co_op/index'
   # get 'co_op/show'
   # get 'co_op/create'
