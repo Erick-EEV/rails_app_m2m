@@ -1,2 +1,9 @@
-<h1>CoOp#edit</h1>
-<p>Find me in app/views/co_op/edit.html.erb</p>
+<h1>What'd You Mess Up?</h1>
+
+<%= form_with method: :patch, model: @co_op do |f| %>
+    <%=f.label :name %>
+    <%=f.text_field :name%>
+    <%=f.label :location %>
+    <%=f.text_field :location%>
+    <%=f.submit %>
+<%end%>

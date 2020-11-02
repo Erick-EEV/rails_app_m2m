@@ -11,6 +11,6 @@ resources :worker, only: [:index, :show, :create, :edit]
   # get 'co_op/show'
   # get 'co_op/create'
   # get 'co_op/edit'
-  resources :co_op, only: [:index, :show, :create, :edit]
+  resources :co_op 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

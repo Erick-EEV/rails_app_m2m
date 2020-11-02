@@ -1,0 +1,11 @@
+<h1>Make A New CoOp</h1>
+<ul>
+<%= form_for @co_op, url: {action: 'create'} do |f|%>
+    <%= f.text_field :name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :location%>
+     <%= f.label :location %><br>
+    <%=f.submit %>
+    <%= link_to 'Take Me Back!', co_op_index_path%>
+<%end%>
+<ul>

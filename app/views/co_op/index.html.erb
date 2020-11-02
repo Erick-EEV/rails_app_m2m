@@ -1,3 +1,9 @@
 <h1>CoOp</h1>
+<ul>
+<% @co_ops.each do |co_op|%>
 
-<% @co_ops.%>
+   <li> <%= link_to 'X', co_op, method: 'delete'%> <%= link_to co_op.name, co_op_path(co_op)%> </li>
+
+<% end %>
+</ul>
+<%= link_to 'Create New!', new_co_op_path%>

@@ -10,4 +10,9 @@ class WorkerController < ApplicationController
 
   def edit
   end
+
+private
+  def worker_params
+    params.require(:workers).permit(:name, :city)
+  end
 end

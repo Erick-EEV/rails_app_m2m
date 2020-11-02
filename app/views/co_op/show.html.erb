@@ -1,2 +1,12 @@
-<h1>CoOp#show</h1>
-<p>Find me in app/views/co_op/show.html.erb</p>
+<h1>CoOp Details</h1>
+<ul>
+    <li><%= @co_op.name %></li>
+    <li><%= @co_op.location %></li>
+    <%= link_to 'Back To Co-Op List', co_op_index_path %><br>
+    <%= link_to 'Edit', edit_co_op_path%>
+</ul>
+
+<% @workers.each do |emp|%>
+<%= emp.id %>
+<%= %>
+<% end %>
