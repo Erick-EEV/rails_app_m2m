@@ -1,2 +1,7 @@
-<h1>Worker#show</h1>
-<p>Find me in app/views/worker/show.html.erb</p>
+<h1>Worker Details</h1>
+<ul>
+    <li><%= @worker.name%></li>
+<%= @worker.city%><br>
+<%= link_to 'Back To Index Page', worker_index_path%>
+<%= link_to 'Edit', edit_worker_path%>
+</ul>

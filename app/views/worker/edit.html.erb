@@ -1,2 +1,10 @@
-<h1>Worker#edit</h1>
-<p>Find me in app/views/worker/edit.html.erb</p>
+<h1>Edit Info</h1>
+
+<%= form_with method: :patch, model: @worker do |f|%>
+<%= f.label :name%>
+<%= f.text_field :name%>
+
+<%= f.label :city%>
+<%= f.text_field :city%>
+<%= f.submit %>
+<%end%>
