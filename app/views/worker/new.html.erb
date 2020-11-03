@@ -1,0 +1,12 @@
+<h1>Add Worker</h1>
+
+<ul>
+<%= form_for @worker, url: {action: 'create'} do |f|%>
+    <%= f.text_field :name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :city%>
+     <%= f.label :city %><br>
+    <%=f.submit %>
+    <%= link_to 'Take Me Back!', co_op_index_path%>
+<%end%>
+<ul>

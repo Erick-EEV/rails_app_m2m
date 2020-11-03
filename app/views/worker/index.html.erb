@@ -4,3 +4,5 @@
     <li><%=link_to 'X', worker, method: 'delete' %> <%= link_to worker.name, worker_path(worker.id) %></li>
 <%end%>
 </ul>
+
+<%= link_to 'Add New Worker', new_worker_path%>

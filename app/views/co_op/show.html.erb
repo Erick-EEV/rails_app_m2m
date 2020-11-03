@@ -5,8 +5,10 @@
     <%= link_to 'Back To Co-Op List', co_op_index_path %><br>
     <%= link_to 'Edit', edit_co_op_path%>
 </ul>
-
+<ol>
 <% @workers.each do |emp|%>
-<%= emp.id %>
-<%= %>
-<% end %>
+    <li><%= emp.id %></li>
+    <% end %>
+<%= link_to 'See Workers', worker_index_path%>
+</ol>
+

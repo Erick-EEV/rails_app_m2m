@@ -5,6 +5,8 @@ class CoOpController < ApplicationController
 
   def show
     @workers = CoOpWorker.where(co_op_id: params[:id])
+    
+
     @co_op = CoOp.find(params[:id])
   end
 

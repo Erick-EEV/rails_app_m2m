@@ -24,8 +24,13 @@ class WorkerController < ApplicationController
     redirect_to worker_index_path
   end
 
+  def new
+    @worker = Worker.new
+  end
   
   def create
+    new_worker = Worker.create(worker_params)
+    redirect_to worker_path(new_worker.id)
   end
 
 
